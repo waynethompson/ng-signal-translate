@@ -1,0 +1,47 @@
+{
+  "name": "ng-signal-translate",
+  "version": "0.1.0",
+  "description": "Angular 22+ I18N library that uses signals and no depencency on zone.js",
+  "license": "MIT",
+  "author": "Wayne Thompson",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/waynethompson/ng-signal-translate.git"
+  },
+  "homepage": "https://github.com/waynethompson/ng-signal-translate#readme",
+  "bugs": {
+    "url": "https://github.com/waynethompson/ng-signal-translate/issues"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "angular",
+    "i18n",
+    "signals",
+    "zone-less"
+  ],
+  "files": [
+    "dist"
+  ],
+  "peerDependencies": {
+    "@angular/core": "^22.0.0"
+  },
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "build": "ng-packagr -p ng-package.json"
+  },
+  "devDependencies": {
+    "@angular/common": "^22.0.6",
+    "@angular/compiler": "^22.0.6",
+    "@angular/compiler-cli": "^22.0.6",
+    "@angular/core": "^22.0.0",
+    "@angular/platform-browser": "^22.0.6",
+    "jsdom": "^25.0.1",
+    "ng-packagr": "^22.0.1",
+    "typescript": "^6.0.3",
+    "vitest": "^3.2.7"
+  }
+}
