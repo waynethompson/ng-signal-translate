@@ -1,0 +1,14 @@
+<main>
+  <h1>{{ title() }}</h1>
+
+  <ngst-language-switcher [languages]="languages" />
+
+  <section>
+    <p>{{ greeting() }}</p>
+    <p>{{ 'search.results' | translate: { count: resultCount() } }}</p>
+  </section>
+
+  @if (loadErrors()['es']) {
+    <p class="error">Couldn't load the Spanish dictionary (expected — try switching back to English or French).</p>
+  }
+</main>
