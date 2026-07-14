@@ -12,12 +12,11 @@ export interface SwitcherLanguage {
   template: `
     <select
       class="ngst-language-switcher"
-      [value]="translate.language()"
       (change)="onChange($event)"
       aria-label="Language"
     >
       @for (lang of languages(); track lang.code) {
-        <option [value]="lang.code">{{ lang.label }}</option>
+        <option [value]="lang.code" [selected]="lang.code === translate.language()">{{ lang.label }}</option>
       }
     </select>
   `,
